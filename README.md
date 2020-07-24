@@ -7,3 +7,6 @@ One option is make the prefix specific to the solution that we're actually creat
 1. If you are using PowerShell and are writing a custom script but cannot edit your system’s registry keys, you can also set your TLS settings using __ServicePointManager.SecurityProtocol:__
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bOR [Net.SecurityProtocolType]::Tls12
+
+## Installs
+https://community.dynamics.com/crm/b/dynamics-ce-tech-blog/posts/dynamics-365-developer-toolkit-for-visual-studio-2017
