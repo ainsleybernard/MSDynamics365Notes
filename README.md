@@ -75,6 +75,9 @@ One option is make the prefix specific to the solution that we're actually creat
 if managed layer is sitting at the bottom, need to perform an upgrade which create a new solution on top of the layering, and once upgrade is complete the bottom layer is moved to the top.
 
 
+## Package Deployer
+Solution (i.e. entities, attributes) + Data (lookups, duplicate detections rules) = Pkg folder ( creates like installer wizard)
+Multiple solutions can be included in package and export data using the __configuration migration tool__, which creates zip file that can be included in the package
 
 ## Extra
 1. If you are using PowerShell and are writing a custom script but cannot edit your system’s registry keys, you can also set your TLS settings using __ServicePointManager.SecurityProtocol:__
