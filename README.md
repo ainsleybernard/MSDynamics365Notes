@@ -27,14 +27,46 @@ Recommendation from the SDK
  2 Types of distribution
 1. (When we control all the target environments) i.e. DEV--> Build Server --> QA--> UAT--> Production (managed and unmanged makes no difference in this scenario)
 
-2.
+2. When we do not have control over the target environments i.e. Development (solution V1 and then patch to v2) --> customer 1 (customizations), customer 2 (customizations), customer 3 (customizations)
 
-Solution Layering
+Example 1
 
-Effective Customisations
-__Unmanaged__ Layer, i.e. Account Form
+Solution Layering - concept
+
+Effective Customisations, i.e Account Entity, Account Form, Custom attribute ( is combination of the three layers below it)
+
+__Unmanaged__ Layer, i.e. Account Form (unmanaged layer being the layer that takes precedence as its the top most layer)
+
 __Solution Managed Layer__ i.e. Account Form, Custom attribute
+
 __System Layer__ i.e. Account Entity, Account Form (all the stuff that comes out of the box)
+
+Example 2
+
+Solution Layering - Managed Solution Layering
+
+Effective Customisations, i.e Account Entity, Account Form A.2, Custom attribute ( is combination of the three layers below it)
+
+__Managed Solution A (Version 1.2 Path)__ ie. Account Form A.2
+
+__Managed Solution B (Version 1.2 Path)__ i.e Account Form B, custom attribute
+
+__Managed Solution A (Version 1)__ i.e Account Form A
+
+__System Layer__ i.e. Account Entity, Account Form (all the stuff that comes out of the box)
+
+__Important The managed infastructure is so complex, must choose for the right reason.__
+
+__Advantages__
+Can control what customisations to our can be made
+Can update and patch our solution without overwriting the customers customisations
+Allows customer to delete the solution and fully unde the import
+
+__Disavantages__
+If the customer created dependencies on our solution, they cannot delete it
+Historically there have been many bugs with managed import system
+Unmanaged customizations are to overwrite (i.e forms)
+
 
 ## Naming solutions
 One option is make the prefix specific to the solution that we're actually creating because it's acts like are namespace i.e.
