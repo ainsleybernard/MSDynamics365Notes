@@ -71,6 +71,11 @@ Unmanaged customizations are to overwrite (i.e forms)
 ## Naming solutions
 One option is make the prefix specific to the solution that we're actually creating because it's acts like are namespace i.e.
 
+## Import Manage Solution
+if managed layer is sitting at the bottom, need to perform an upgrade which create a new solution on top of the layering, and once upgrade is complete the bottom layer is moved to the top.
+
+
+
 ## Extra
 1. If you are using PowerShell and are writing a custom script but cannot edit your system’s registry keys, you can also set your TLS settings using __ServicePointManager.SecurityProtocol:__
 
