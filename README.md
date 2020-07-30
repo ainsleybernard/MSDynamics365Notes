@@ -79,6 +79,9 @@ if managed layer is sitting at the bottom, need to perform an upgrade which crea
 Solution (i.e. entities, attributes) + Data (lookups, duplicate detections rules) = Pkg folder ( creates like installer wizard)
 Multiple solutions can be included in package and export data using the __configuration migration tool__, which creates zip file that can be included in the package
 
+## Adding NuGet Dependencies
+Adding the latest version of micorosoft.crm.sdk.CoreAssemblies 9.0.2.26 requires at least .net 4.7.2
+
 ## Extra
 1. If you are using PowerShell and are writing a custom script but cannot edit your system’s registry keys, you can also set your TLS settings using __ServicePointManager.SecurityProtocol:__
 
