@@ -79,6 +79,11 @@ if managed layer is sitting at the bottom, need to perform an upgrade which crea
 Solution (i.e. entities, attributes) + Data (lookups, duplicate detections rules) = Pkg folder ( creates like installer wizard)
 Multiple solutions can be included in package and export data using the __configuration migration tool__, which creates zip file that can be included in the package
 
+
+## Creating plugin + deploy with spkl
+1. add the pluginBase.cs from the sdk to your solution which contains should contain plugin library.
+Note: common models, is to create a seperate class or assembly per plugin. __but we have control of entire project easier to have single entry point for plugins (benifit we can manage the order of execution, without worrying about the meta data, worrying about registrations__
+
 ## Adding NuGet Dependencies
 Adding the latest version of micorosoft.crm.sdk.CoreAssemblies 9.0.2.26 requires at least .net 4.7.2
 
